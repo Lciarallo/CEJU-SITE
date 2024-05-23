@@ -1,13 +1,17 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  .carousel-caption h5 {
-    font-weight: 600;
-    color: #fff;
-  }
-  .carousel-caption p {
-    font-weight: 300;
-    color: #ddd;
-  }
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.carousel-container {
+  width: 60%; /* Ajuste a largura conforme necessário */
+  margin: 0 auto; /* Centraliza o carrossel */
+}
+.carousel-caption h5 {
+  font-weight: 600;
+  color: #fff;
+}
+.carousel-caption p {
+  font-weight: 300;
+  color: #ddd;
+}
