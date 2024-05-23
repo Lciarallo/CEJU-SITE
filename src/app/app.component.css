@@ -1,0 +1,13 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .carousel-caption h5 {
+    font-weight: 600;
+    color: #fff;
+  }
+  .carousel-caption p {
+    font-weight: 300;
+    color: #ddd;
+  }
