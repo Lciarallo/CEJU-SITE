@@ -1,0 +1,41 @@
+h3#titulo {
+    text-align: center;
+    margin-right: 12rem;
+    margin-left: 12rem;
+    margin-top: 3rem;
+}
+
+h3#titulo hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-top: 1rem;
+}
+
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 7rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card h4 {
+    margin: 0 0 1rem;
+}
+
+.card p {
+    color: #666;
+}

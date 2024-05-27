@@ -7,6 +7,3 @@ import {FooterComponent} from './app/footer/footer.component'
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
 
-bootstrapApplication(FooterComponent,appConfig)
-  .catch((err)=> console.log(err));
-
