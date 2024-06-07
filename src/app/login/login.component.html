@@ -1,19 +1,19 @@
-<form (ngSubmit)="salvar()">
+<form [formGroup]="contactForm" (ngSubmit)="salvar()">
   <div class="form-group">
     <h1 class="pt-5">Acesso interno</h1>
 
     <p>Login:</p>
-    <input type="text" name="nome" class="form-control" id="inputlogin" [formControl]="textLogin" placeholder="Digite seu Login">
+    <input type="text" name="nome" class="form-control" id="inputlogin"  placeholder="Digite seu Login" formControlName="login">
   </div>
 
   <div class="form-group">
     <p>Senha:</p>
-    <input type="password" name="senha" class="form-control" id="inputsenha" [formControl]="textSenha"  placeholder="**********">
+    <input type="password" name="senha" class="form-control" id="inputsenha"   placeholder="**********" formControlName="senha">
   </div>
 
   <br>
   <div class="text-center py-5">
     <button type="submit" class="btn-salvar">Entrar</button>
-  </div>
+  </div>  
 </form>
 <br>

@@ -1,34 +1,33 @@
-import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,FormsModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'] // Corrigido styleUrl para styleUrls
 })
-export class LoginComponent {
-  textLogin = new FormControl('');
-  textSenha = new FormControl('');
+export class LoginComponent implements OnInit {
+  contactForm: FormGroup;
 
-  constructor() {
-    this.textLogin.valueChanges.subscribe(value => {
-      console.log('Login: ', value);
+  constructor(private fb: FormBuilder) {
+    this.contactForm = this.fb.group({
+      login: ['', Validators.required],
+      senha: ['', Validators.required]
     });
-    this.textSenha.valueChanges.subscribe(value => {
-      console.log('Senha: ', value);
-    });
-    
+  }
+
+  ngOnInit(): void {
+
   }
 
   salvar(): void {
-
-    const data = {
-        login: this.textLogin.value,
-        senha: this.textSenha.value
+    if (this.contactForm.valid) {
+      console.log(this.contactForm.value);
     }
-    console.log(data);
-}
+  }
+
 }
