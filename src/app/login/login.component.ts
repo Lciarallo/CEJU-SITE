@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, FormsModule, NgForm, ReactiveFormsModule } from
   standalone: true,
   imports: [ReactiveFormsModule,FormsModule],
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css'] // Corrigido styleUrl para styleUrls
+  styleUrls: ['./login.component.css'] 
 })
 export class LoginComponent implements OnInit {
   contactForm: FormGroup;
@@ -19,10 +19,8 @@ export class LoginComponent implements OnInit {
       senha: ['', Validators.required]
     });
   }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-
-  }
 
   salvar(): void {
     if (this.contactForm.valid) {
