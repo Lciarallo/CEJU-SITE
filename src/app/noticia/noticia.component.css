@@ -56,6 +56,7 @@ body {
 .column.text p {
     font-size: 18px;
     line-height: 1.8;
+    text-indent: 30px;
     text-align: justify;
 }
 
