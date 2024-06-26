@@ -1,22 +1,45 @@
 footer {
-    background: rgba(3, 11, 158, 0.9);
-    box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    bottom: 0;
-    
-    width: 100%;
+  background: rgba(3, 11, 158, 0.9);
+  box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
 
-  }
-  .footer-links a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
+.footer-content {
+  display: flex;
+  justify-content: center; /* Alinha o conteúdo centralmente */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaçamento adequado entre os itens */
+  margin-bottom: 10px; /* Espaço entre links e números */
+}
+
+.footer-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaçamento adequado entre os itens */
+}
+
+.footer-links a, .footer-numbers p {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
