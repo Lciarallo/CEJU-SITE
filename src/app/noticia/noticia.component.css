@@ -45,11 +45,22 @@ body {
 }
 
 .imagem {
-    float: left;
-    width: 60%; 
+    width: 50%; 
     margin-right: 20px; 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.noticia:nth-child(even) .imagem {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.noticia:nth-child(odd) .imagem {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
 }
 
 p {
