@@ -1,3 +1,10 @@
 img{
     width: 100%;
 }
+
+a{
+    background-color: blue;
+}
+.display-4{
+    background-color: rgba(22, 22, 22, 0.521);
+}

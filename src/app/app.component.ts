@@ -8,7 +8,7 @@ import { FeedComponent } from "./feed/feed.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FooterComponent, FeedComponent]
+    imports: [RouterOutlet, FeedComponent, FooterComponent]
 })
 export class AppComponent {
   title = 'CEJU-Site';

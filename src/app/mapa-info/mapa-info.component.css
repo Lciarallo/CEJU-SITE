@@ -1,38 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-}
-
-.container {
-    background: #fff;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-h1 {
+    font-family: 'Poppins', Arial, sans-serif;
     color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
+    line-height: 1.6;
+  }
 
-p {
-    color: #555;
-    font-size: 18px;
-    line-height: 1.8;
-    text-align: justify;
-}
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
 
-.iframe-container{
-    display: flex;
-    justify-content: center;
-}
+  .display-4 {
+    font-weight: 700;
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .card {
+    border: none;
+    border-radius: 15px;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  .ratio {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .display-4 {
+      font-size: 2.5rem;
+    }
+    .lead {
+      font-size: 1.1rem;
+    }
+  }
+
+  .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }

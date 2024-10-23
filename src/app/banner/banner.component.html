@@ -1,49 +1,68 @@
-<main class="main">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/frente.jpg" class="d-block " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Aqui você é mais!</h5>
-            <p>Venha conhecer o novo CEJU.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/recepcao.jpg" class="d-block " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Estamos ansiosos pela sua chegada!</h5>
-            <p>Venha para nossa inauguração!.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets\img\sala_emocoes.jpg" class="d-block " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Venha fazer a diferença!</h5>
-            <p>Venha participar dos futuros profissionais de canoinhas!.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
+<main class="main container-fluid px-0">
+  <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <app-mapa-info></app-mapa-info>
-    <app-noticia></app-noticia>
-    
-    
-  </main>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/frente.jpg" class="d-block w-100" alt="Fachada do CEJU">
+        <div class="carousel-caption">
+          <h2 class="display-4">Aqui você é mais!</h2>
+          <p class="lead">Venha conhecer o novo CEJU.</p>
+          <a href="#sobre" class="btn btn-primary btn-lg mt-3">Saiba Mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/recepcao.jpg" class="d-block w-100" alt="Recepção do CEJU">
+        <div class="carousel-caption">
+          <h2 class="display-4">Estamos ansiosos pela sua chegada!</h2>
+          <p class="lead">Venha para nossa inauguração!</p>
+          <a href="#eventos" class="btn btn-primary btn-lg mt-3">Ver Eventos</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/sala_emocoes.jpg" class="d-block w-100" alt="Sala de emoções do CEJU">
+        <div class="carousel-caption">
+          <h2 class="display-4">Venha fazer a diferença!</h2>
+          <p class="lead">Participe da formação dos futuros profissionais de Canoinhas!</p>
+          <a href="#inscricao" class="btn btn-primary btn-lg mt-3">Inscreva-se</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </section>
+
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre o CEJU</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>O Centro de Educação para Jovens e Universitários (CEJU) é um espaço dedicado ao desenvolvimento e aprimoramento de habilidades essenciais para o sucesso acadêmico e profissional.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Oferecemos uma variedade de cursos, workshops e atividades voltadas para o crescimento pessoal e profissional dos jovens de Canoinhas e região.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-mapa-info></app-mapa-info>
+
+  <section id="noticias" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Últimas Notícias</h2>
+      <app-noticia></app-noticia>
+    </div>
+  </section>
+
+
+</main>
